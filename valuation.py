@@ -38,8 +38,8 @@ def no_income_forward_valuation(K: float, S: float, t: int, r: float, position: 
     F_new = S * (e**(r_decimal*(t/12)))
     forwardValue = (F_new - K) * (e**(-r_decimal*(t/12)))
 
-    if position == 'short':
-        forwardValue *= -1
+    if position == 'Short':
+        forwardValue = (-forwardValue)
 
     return {
         "spot_price"    : S,
@@ -96,7 +96,7 @@ def known_income_forward_valuation(K: float, S: float, t: int, r: float, positio
     F_new = (S - PV) * (e**(r_decimal*(t/12)))
     forwardValue = (F_new - K) * (e**(-r_decimal*(t/12)))
 
-    if position == 'short':
+    if position == 'Short':
         forwardValue *= -1
 
     return {
@@ -152,8 +152,8 @@ def known_yield_forward_valuation(K: float, S: float, t: int, r: float, position
     F_new = S * (e**((r_decimal - y_decimal)*(t/12)))
     forwardValue = (F_new - K) * (e**(-r_decimal*(t/12)))
 
-    if position == 'short':
-        forwardValue *= -1
+    if position == 'Short':
+        forwardValue = (-1)(forwardValue)
 
     return {
         "spot_price"    : S,

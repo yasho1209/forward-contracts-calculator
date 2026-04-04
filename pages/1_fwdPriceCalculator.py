@@ -6,12 +6,12 @@ from pricing import no_income_forwards, known_income_forwards, known_yield_forwa
 # ============================================================
 
 st.set_page_config(
-    page_title="Forward Price Calculator",
+    page_title="Forward Pricing",
     page_icon="📈",
     layout="wide"
 )
 
-st.title("📈 Forward Price Calculator")
+st.title("📈 Forward Pricing")
 st.divider()
 
 # ============================================================
