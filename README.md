@@ -1,6 +1,6 @@
 # Forward Contracts Calculator 📈
 
-A Python + Streamlit app for pricing and valuing forward contracts, built from scratch following **Hull — Options, Futures & Other Derivatives (Chapter 5)**.
+A Python + Streamlit app for pricing and valuing forward contracts, built from scratch following.
 
 ## Features
 
